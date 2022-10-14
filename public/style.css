@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    line-height: 0;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+p{
+    font-family: 'Great Vibes', cursive;
+    margin-top: 170px;
+    font-size: 41px;
+    text-align: center;  
+    font-weight: bold;
+    margin-bottom: 39px;
+    color: rgb(238, 130, 148);
+}
+#video-chat-lobby{
+    width: 50%;
+    margin: auto;
+}
+input{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+
+button{
+    margin-top: 1px;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#video-chat-room{
+    display: flex;
+    justify-content: center;
+}
+#user-video{
+    padding: 20px;
+}
+#peer-video{
+    padding: 20px;
+}
+#button-group{
+   display: none;
+}
+.btn {
+    background-color: rgba(220, 20, 60, 0.425);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(220, 20, 113, 0.568);    
+}
+#leaveRoomButton{
+    background-color: rgba(252, 33, 26, 0.747);
+    border: 1px solid rgba(252, 33, 26, 0.817); 
+}
+

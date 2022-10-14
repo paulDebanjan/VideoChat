@@ -21,11 +21,9 @@ let rtcPeerConnection;
 let userStream;
 
 let iceServers = {
-    
     iceServers:[
-        {urls: "stan:numb.viagenie.ca:3478"},
         {urls: "stun:stun.services.mozilla.com"},
-        // {urls: "stun:stun.l.google.com:19302"},  
+        {urls: "stun:stun.l.google.com:19302"},
     ],
 } 
 

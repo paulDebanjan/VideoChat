@@ -1,4 +1,5 @@
 let socket = io();
+
 let divVideoChatLobby = document.getElementById("video-chat-lobby");
 let divVideoChat = document.getElementById("video-chat-room");
 let joinButton = document.getElementById("join");
@@ -129,7 +130,9 @@ socket.on("ready", function() {
 });
 socket.on("candidate", function(candidate) {
     let iceCandidate = new RTCIceCandidate(candidate);
+    // document.write(candidate)
     rtcPeerConnection.addIceCandidate(iceCandidate);
+    console.log(iceCandidate)
 });
 
 socket.on("offer", function(offer) {

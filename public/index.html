@@ -14,15 +14,17 @@
         <input id="room-name" type="text" placeholder="Room Name">
         <button id="join">Join</button>
     </div>
-    <div id="video-chat-room">
-        <video id="user-video" muted="muted"></video>
-        <video id="peer-video"></video>
-    </div>
-    <div id="button-group">
-        <button id="leaveRoomButton" class="btn"><i class="fa-solid fa-phone fa-xl"></i></button>
-        <button id="muteButton" class="btn"><i class="fa-solid fa-microphone fa-xl"></i></button>
-        <button id="hideCameraButton" class="btn"><i class="fa-solid fa-camera fa-xl"></i></button>
-        <button id="presentationButton" class="btn"><i class="fa-solid fa-record-vinyl fa-xl"></i></button>
+    <div id="video-call-div">
+        <div id="video-chat-room">
+            <video id="user-video" muted="muted" autoplay></video>
+            <video id="peer-video" autoplay></video>
+        </div>
+        <div id="button-group">
+            <button id="leaveRoomButton" class="btn"><i class="fa-solid fa-phone fa-xl"></i></button>
+            <button id="muteButton" class="btn"><i class="fa-solid fa-microphone fa-xl"></i></button>
+            <button id="hideCameraButton" class="btn"><i class="fa-solid fa-camera fa-xl"></i></button>
+            <button id="presentationButton" class="btn"><i class="fa-solid fa-record-vinyl fa-xl"></i></button>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>

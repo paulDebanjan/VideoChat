@@ -37,10 +37,12 @@ button{
     justify-content: center;
 }
 #user-video{
-    padding: 20px;
+    padding: 4%;
+    width: 20%;
 }
 #peer-video{
-    padding: 20px;
+    padding: 4%;
+    width: 72%;
 }
 #button-group{
    display: none;

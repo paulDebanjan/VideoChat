@@ -70,7 +70,10 @@ socket.on("created", function() {
     navigator.mediaDevices
     .getUserMedia({
         audio:true, 
-        video:{width:500, height: 500},
+        video:{
+            width: { min: 1024, ideal: 1280, max: 1920 },
+            height: { min: 576, ideal: 720, max: 1080 }
+        },
     })
     .then(function(stream) {
             userStream = stream;
@@ -91,7 +94,10 @@ socket.on("joined", function() {
     navigator.mediaDevices
     .getUserMedia({
         audio:true, 
-        video:{width:500, height: 500}
+        video:{
+            width: { min: 1024, ideal: 1280, max: 1920 },
+            height: { min: 576, ideal: 720, max: 1080 }
+        }
     })
     .then(function(stream) {
             userStream = stream;
@@ -132,7 +138,7 @@ socket.on("candidate", function(candidate) {
     let iceCandidate = new RTCIceCandidate(candidate);
     // document.write(candidate)
     rtcPeerConnection.addIceCandidate(iceCandidate);
-    console.log(iceCandidate)
+    // console.log(iceCandidate)
 });
 
 socket.on("offer", function(offer) {
